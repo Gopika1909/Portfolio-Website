@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gopika Portfolio</title>
+    <link rel="icon" href="images/logo.avif" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/043e3e37d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <img src="images/computer.webp" alt="" />
+        <ul id="sideMenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutSection">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contactMe">Contact Me</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="menuClose()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="menuOpen()"></i>
+      </nav>
+    </header>
+    <main>
+      <!-- First Section: Home -->
+      <div id="homeSection">
+        <div class="leftSection">
+          <h1>Hi, My Name is <span class="nameColor">Gopika</span></h1>
+
+          <h4>and I am a Full Stack Web Developer<br /></h4>
+
+          <!-- <span id="element"></span> -->
+        </div>
+        <div class="rightSection">
+          <!-- <img src="images/backgroundcover.png" alt="" /> -->
+        </div>
+      </div>
+
+      <!-- Second Section: About -->
+      <div id="aboutSection">
+        <div class="aboutContainer">
+          <div class="row">
+            <!-- in first column : images -->
+            <div class="col-1">
+              <img src="images/aboutme.webp" alt="" />
+            </div>
+            <!-- in second column : text -->
+            <div class="col-2">
+              <h1 class="aboutTitle">About Me</h1>
+              <p class="aboutDesc">
+              I am an enthusiastic Software Developer with a strong foundation in Java, 
+              Data Structures & Algorithms and Web Development. I enjoy solving complex problems, 
+              building efficient solutions, and continuously expanding my technical skills.I thrive on creating
+              intuitive and engaging web experiences and am driven by the challenge of turning complex problems
+              into elegant solutions. My technical background, combined with hands-on project experience, has 
+              equipped me with a strong foundation in both front-end and back-end development.I am eager to contribute 
+              to innovative projects and collaborate with like-minded professionals and enthusiasts in the web development
+               industry and explore opportunities in the software engineering field.
+              <div class="about-tabs">
+                <p
+                  class="about-tab-title active-tab-title"
+                  onclick="openAboutTabs('skills')"
+                >
+                  Skills
+                </p>
+                <p
+                  class="about-tab-title"
+                  onclick="openAboutTabs('experience')"
+                >
+                  Experience
+                </p>
+                <p class="about-tab-title" onclick="openAboutTabs('education')">
+                  Education
+                </p>
+              </div>
+              <!-- Skills -->
+              <div class="about-tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Languages:</span><br />Java, Python, JavaScript, SQL
+                  </li>
+
+                  <li>
+                    <span>Full Stack Technologies:</span><br />HTML, CSS, React,
+                    NodeJs, Express, Mongodb
+                  </li>
+                  <li><span>DevOps:</span><br />GitHub</li>
+                  <li>
+                    <span>Tools:</span><br />Git, Figma, Canva
+                  </li>
+                </ul>
+              </div>
+              <!-- Experience -->
+              <div class="about-tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>June'23 - August'23</span><br />Trainee Software Engineer
+                    Intern at
+                    <b>
+                      Espire Infolabs Pvt. Ltd.</b>
+                  </li>
+                </ul>
+              </div>
+              <!-- Education -->
+              <div class="about-tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2021 - 2025 | Gurugram</span><br /><b
+                      >BML MUNJAL UNIVERSITY (B.Tech)</b
+                    ><br />
+                    Cum. GPA: 7.21 / 10.0
+                  </li>
+                  <li>
+                    <span>2019 | Kurukshetra(Haryana)</span><br /><b
+                      >D.A.V. PUBLIC SCHOOL</b
+                    ><br />
+                    Percentage : 79.60
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----- Project Section -----  -->
+      <div id="project">
+        <div class="container">
+          <h1 class="projectTitle">Projects</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="project_images/Spotify.png" alt="" />
+              <div class="projectParts">
+                <h4>SPOTIFY CLONE</h4>
+                <p>
+                  Developed a dynamic Spotify clone with music playback, search, playlists, 
+                  and user authentication, emphasizing responsive UI/UX design and seamless user experience.
+                </p>
+                <a
+                  href="https://github.com/Gopika1909/Spotify-Clone"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="project_images/Foodly.png" alt="" />
+              <div class="projectParts">
+                <h4>Foodly Landing Page</h4>
+                <p>
+                  Developed a responsive and visually engaging landing page for Foodly
+                   using HTML, CSS, SCSS, and JavaScript, featuring modern UI, seamless animations,
+                    and intuitive navigation.
+                </p>
+                <a href="https://github.com/Gopika1909/Foodly-Landing-Page" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="project_images/ChatRoom.png" alt="" />
+              <div class="projectParts">
+                <h4>REAL TIME Chat Room</h4>
+                <p>
+                  Developed a web-based chat application with real-time messaging, 
+                  chat room creation, and a responsive design, using HTML, CSS, JavaScript,
+                   Node.js, and Socket.io.
+                </p>
+                <a href="https://github.com/Gopika1909/Real-Time-Chat-Application" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="./projects.html" class="seeMoreWorkBtn">See More</a>
+        </div>
+      </div>
+
+      <!-- ----- Contact Me Section -----  -->
+      <div id="contactMe" style="align-items: center; text-align: center">
+        <div class="container">
+          <div class="row">
+            <div class="contact-leftSide">
+              <h1 class="contactTitle">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i
+                >gopikapasricha19@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>+91-9588578890</p>
+              <div class="socialMedia">
+                <a
+                  href="https://www.linkedin.com/in/gopika-pasricha/"
+                  target="_blank"
+                  class="linkedin"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/Gopika1909"
+                  target="_blank"
+                  class="github"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <!--  ----- resume download btn ----- -->
+              <a href="Gopika.pdf" download class="resumeBtn"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="copyRight">
+        <p>
+          Copyright &#169;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Gopika' Portfolio <i class="fa-sharp fa-solid fa-heart fa-beat"></i>
+        </p>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Application Engineer.", "Full Stack Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+    <!-- Menu Open/Close -->
+    <script>
+      var sideMenu = document.getElementById("sideMenu");
+      function menuOpen() {
+        sideMenu.style.right = "0";
+      }
+      function menuClose() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+    <!-- about section tabs -->
+    <script>
+      //   openAboutTabs : skills, experience, education
+      var openTabs = document.getElementsByClassName("about-tab-title");
+      var tabContents = document.getElementsByClassName("about-tab-contents");
+      function openAboutTabs(aboutTabName) {
+        for (openTab of openTabs) {
+          openTab.classList.remove("active-tab-title");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+
+        // color ko active krega or add krega -->
+        event.currentTarget.classList.add("active-tab-title");
+        document.getElementById(aboutTabName).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>

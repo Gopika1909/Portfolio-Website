@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/043e3e37d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      header a{
+        display: block;
+        margin-left: 90px;
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+      }
+      .allProjects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 90px;
+        gap: 30px;
+      }
+
+      .project {
+        width: calc(30% - 20px);
+
+        background-color: rgba(191, 143, 237, 0.109);
+        border: 1px solid rgba(191, 143, 237, 0.378);
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      .project img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .project p {
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+
+      .project .heading {
+        font-size: 12px;
+        text-transform: uppercase;
+        height: 10%;
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgba(155, 15, 66, 0.798);
+        color: white;
+        border: none;
+        display: inline-block;
+        padding: 5px 10px;
+        text-decoration: none;
+      }
+      .project .heading:hover {
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 680px) {
+        header a{
+           margin-left:50px;
+          }
+        .allProjects {
+          justify-content: center;
+          margin: 20px 40px;
+        }
+
+        .project {
+          width: calc(100% - 20px);
+        }
+        .header {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+
+      <a href="./index.html">Home</a></li>
+    </header>
+      
+
+    <div class="allProjects">
+      <!-- <h1 class="projectTitle">Projects</h1> -->
+      <div class="project">
+        <img src="./project_images/ChatRoom.png" alt="" />
+        <p>
+          Developed a real-time chat application with room management using HTML, CSS, JavaScript,
+           Node.js, and Socket.io.
+        </p>
+        <a
+          href="https://github.com/Gopika1909/Real-Time-Chat-Application"
+          target="\_blank"
+        >
+          <button class="heading">Real time chat room</button>
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="project_images/Spotify.png" alt="" />
+        <p>
+          Built a Spotify clone with music playback, search, playlists, and authentication using HTML, CSS, and JavaScript.   </p>
+        <a
+          href="https://github.com/Gopika1909/Spotify-Clone"
+          target="\_blank"
+        >
+          <button class="heading">SPOTIFY CLONE</button>
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="project_images/Foodly.png" alt="" />
+        <p>
+          Developed a responsive and visually engaging restaurant landing page for
+           Foodly using HTML, CSS, SCSS, and JavaScript.
+        </p>
+        <a href=" https://github.com/Gopika1909/Foodly-Landing-Page" target="\_blank">
+          <button class="heading">Foodly Landing Page</button>
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="project_images/Weather.png" alt="" />
+        <p>
+          Created a responsive weather app with real-time updates on temperature, conditions, and forecasts using HTML, CSS, JavaScript, and a weather API.   </p>
+        <a
+          href=" https://github.com/Gopika1909/Weather-App"
+          target="\_blank"
+        >
+          <button class="heading">Weather App</button>
+        </a>
+      </div>
+      <div class="project">
+        <img src="./project_images/Instagram.jpg" alt="" />
+        <p>
+          Built an Instagram Caption Extractor using Python to scrape and analyze
+           captions from posts via hashtags, usernames, or URLs, enabling trend and content analysis.
+        </p>
+        <a
+          href="https://github.com/Gopika1909/Instagram-Caption-Extractor"
+          target="\_blank"
+        >
+          <button class="heading">Instagram Caption Extractor</button>
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="./project_images/Emoji.jpg" alt="" />
+        <p>
+          Developed an emoji prediction model using Bidirectional LSTM with Keras and TensorFlow to analyze text and suggest relevant emojis based on context.</p>
+        <a
+          href="https://github.com/Gopika1909/Emojify"
+          target="\_blank"
+        >
+          <button class="heading">Emojify</button>
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="./project_images/Video Chat.jpg" alt="" />
+        <p>
+          Built a video chat platform for online interviews with real-time communication, 
+          screen sharing, and recording capabilities using WebRTC and Node.js.
+        </p>
+        <a
+          href="https://github.com/Gopika1909/Video-Chat-App"
+          target="\_blank"
+        >
+          <button class="heading">Video Chat for Online Interviews</button>
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="./project_images/AI Image.jpg" alt="" />
+        <p>
+          Developed an AI-powered image generator that converts text prompts into detailed, high-quality images using advanced generative models.
+        </p>
+        <a href="https://github.com/Gopika1909/AI-Powered-Image-Generator" target="\_blank">
+          <button class="heading">AI Powered Image Generator</button>
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="./project_images/E-Com.png" alt="" />
+        <p>
+          Built an E-Website Product Management Portal with user authentication and product management features using React and Node.js.
+        </p>
+        <a href="https://github.com/Gopika1909/Ewebsite-Product-Management" target="\_blank">
+          <button class="heading">E-website product managemant </button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
